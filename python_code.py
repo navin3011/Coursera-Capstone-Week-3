@@ -1,7 +1,9 @@
 #This file contains first question of Capstone Week-3
+! pip install beautifulsoup4
+! pip install --upgrade lxml
+from lxml.html import fromstring
 import pandas as pd 
 import requests 
-#import Numpy as np
 from bs4 import BeautifulSoup
 req = requests.get("https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M") 
 soup = BeautifulSoup(req.content,'lxml') 
