@@ -14,7 +14,7 @@ nh=pd.DataFrame(df[0])
 df2 = nh[nh['Borough'] == "Not assigned"].index
 nh.drop(df2, axis=0, inplace=True)
 nh.reset_index(drop=True, inplace=True)
-nh.columns = ['Borough', 'Neighbourhood','Postcode']
+nh.columns = ['Postcode','Borough', 'Neighbourhood']
 cols = nh.columns.tolist()
 cols
 nh= nh[cols]
