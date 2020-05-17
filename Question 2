@@ -1,0 +1,17 @@
+#Question 2 of Capstone Project Week 3
+
+import pandas as pd
+import matplotlib.pylab as plt
+filename = "http://cocl.us/Geospatial_data"
+df5 = pd.read_csv(filename)
+
+df5.columns = ['Postcode','Latitude','Longitude']
+cols = df5.columns.tolist()
+cols
+
+link = "https://github.com/navin3011/Coursera-Capstone-Week-3.git"
+nh = pd.read_csv(nh, index_col=0)
+nh.head()
+
+df_merged = pd.merge(df, df5, on='Postcode')
+df_merged.head()
